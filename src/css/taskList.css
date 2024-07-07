@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #1c5f13;
+    --secondary-color: #ccc;
+    --terciary-color: #1a4c11;
+    --border-radius: 5px;
+}
+
+
+.tl-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    padding: 5rem;
+}
+
+.tl-header-title {
+    font-size: 2.5em;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.tl-form-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tl-form-title {
+    font-size: 1.5rem;
+    margin: .5rem 0;
+    text-align: center;
+}
+
+.tl-mark-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.tl-mark-all input[type="checkbox"] {
+    margin-right: .5rem;
+    cursor: pointer;
+    height: 1rem;
+    width: 1rem;
+}
+
+.tl-add-task-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5rem;
+} 
+
+.tl-add-task-input {
+    flex: 3;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-size: 1em;
+}
+
+.tl-add-task-button {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    margin-left: 1rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-size: 1em;
+    background-color: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+.tl-add-task-button:hover {
+    background-color: var(--terciary-color);
+}
+
+.tl-task-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.tl-task-checkbox {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.tl-task-checkbox:checked + .tl-task-input {
+    text-decoration: line-through;
+    color: var(--secondary-color);
+}
+
+.tl-task-input {
+    margin: 0 1rem;
+    height: 2rem;
+    width: 100%;
+    padding: .5rem;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-size: .75rem;
+}
+
+.tl-task-input:disabled {
+    border: none;
+}
+
+.tl-task-icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tl-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem;
+    margin: .5rem 0;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
+    font-size: 1em;
+}
