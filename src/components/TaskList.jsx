@@ -127,6 +127,7 @@ export function TaskList() {
                         className="tl-add-task-button"
                         handleClick={addTask}
                         disabled={!text}
+                        type="primary"
                     >Add Task
                     </Button>
                 </article>
