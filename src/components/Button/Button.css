@@ -24,3 +24,9 @@
     color: var(--accent-color);
     box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
 }
+
+.button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
